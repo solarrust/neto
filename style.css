@@ -1,0 +1,84 @@
+@import url(normalize.css);
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #c87370 url(http://netology.ru/dist/directions_development-aefc3080b78beb734c08557f994a93db.png) no-repeat center bottom/contain;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.logo-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 2em;
+  margin-top: -1.5em;
+}
+
+.logo-net {
+  display: inline-block;
+  height: 11em;
+  width: 11em;
+  background: url(logo.svg) no-repeat center/cover;
+  vertical-align: middle;
+}
+
+.logo-ab {
+  display: inline-block;
+  height: 6em;
+  width: 6em;
+  vertical-align: middle;
+  background: url(working-fox.png) no-repeat center/cover;
+}
+
+.text {
+  max-width: 90%;
+  margin: 0 auto;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  transform: translateY(50%);
+  text-align: center;
+  background: rgba(255,255,255,0.6);
+  padding: 2em 0;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+}
+
+p {
+  font-size: 1.3em;
+}
+
+.text a {
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+
+.code {
+  font-size: 40px;
+  font-family: monospace;
+}
+
+a.btn {
+  display: inline-block;
+  padding: 1em 2em;
+  border-bottom: none;
+  border: 3px solid white;
+  margin: 1em auto 0 auto;
+  transition: .2s;
+}
+
+a.btn:hover {
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.4);
+  transition: .2s;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 200%;
+  }
+}
